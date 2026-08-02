@@ -28,7 +28,7 @@ Millions manage food allergies, diabetes, celiac disease, hypertension, and othe
 
 `Milk` · `Eggs` · `Tree Nuts` · `Peanuts` · `Wheat` · `Soy` · `Sesame`
 
-**Approaches evaluated:**
+**Approaches evaluating:**
 - Rule-Based Food Intelligence
 - Machine Learning Food Intelligence
 
