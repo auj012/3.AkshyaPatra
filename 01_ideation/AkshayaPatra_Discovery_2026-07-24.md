@@ -56,7 +56,11 @@ A weekly cycle of manual research, label-reading, and limited choices — the di
 
 ---
 
-## 3. Current User Journey (Before AI)
+## 3. Current User Journey (Before solution)
+
+<p align="center">
+  <img src="AP_UserJourney.png" alt=" User journey" width="85%">
+</p>
 
 |                    | Step 1: Need Food                                                                                                | Step 2: Research Safe Products                                                                | Step 3: Create Shopping List                                             | Step 4: Visit Store / Retailer                                    | Step 5: Evaluate Products                                              | Step 6: Determine Safety                                           | Step 7: Complete Purchase                                                          | Step 8: Repeat Forever                                                  |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
