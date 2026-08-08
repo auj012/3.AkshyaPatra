@@ -8,6 +8,8 @@ An AI-powered Food Intelligence platform helping people discover foods aligned w
 
 ## Problem
 ![Alt text for the infographic](./FAREConsumerJourney.png)
+![Alt text for the infographic](./Akshya_Patra_Chibi.png)
+
 
 Millions manage food allergies, diabetes, celiac disease, hypertension, and other dietary constraints. Grocery platforms know what customers buy — not what they need to avoid. Food discovery remains difficult, time-consuming, and potentially unsafe.
 
