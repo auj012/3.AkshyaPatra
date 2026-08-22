@@ -1,0 +1,46 @@
+01_ideation
+│
+│  WHY?
+│  Problem
+│  Discovery
+│  User Journey
+│  Opportunity
+│
+↓
+02_product_spec
+│
+│  WHAT?
+│  Product PRD
+│  POC PRD
+│
+↓
+03_architecture
+│
+│  HOW?
+│  System
+│  Data
+│  AI/ML
+│  Decisions
+│
+↓
+04_project_mgmt
+│
+│  HOW DO WE DELIVER IT?
+│  Backlog
+│  Sprints
+│  Stories
+│  DoD
+│  Demos
+│
+↓
+05_qa_evals
+│
+│  DOES IT WORK?
+│  Test strategy
+│  Evaluation
+│  Results
+│  Errors
+│  Lessons
+│
+↓
+PRODUCT DECISION
