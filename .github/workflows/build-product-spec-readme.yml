@@ -1,0 +1,46 @@
+name: Build Product Spec README
+
+on:
+  push:
+    paths:
+      - "02_product_spec/Product_PRD.md"
+      - "02_product_spec/POC_PRD.md"
+      - ".github/workflows/build-product-spec-readme.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Combine PRDs into README
+        run: |
+          {
+            echo "# 02 — Product Specification"
+            echo
+            echo "> Generated from \`Product_PRD.md\` and \`POC_PRD.md\`."
+            echo
+            cat 02_product_spec/Product_PRD.md
+            echo
+            echo "---"
+            echo
+            cat 02_product_spec/POC_PRD.md
+          } > 02_product_spec/README.md
+
+      - name: Commit generated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add 02_product_spec/README.md
+
+          if git diff --cached --quiet; then
+            echo "README is already current."
+          else
+            git commit -m "docs: generate product spec README"
+            git push
+          fi
