@@ -1,0 +1,52 @@
+name: Build Architecture README
+
+on:
+  push:
+    paths:
+      - "03_architecture/01_Conceptual_Architecture.md"
+      - "03_architecture/02_logical_arch.md"
+      - "03_architecture/03_Implementation.md"
+      - ".github/workflows/build-architecture-readme.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Combine architecture documents
+        run: |
+          {
+            echo "# 03 — Architecture"
+            echo
+            echo "> This README is automatically generated from the architecture documents."
+            echo
+            cat 03_architecture/01_Conceptual_Architecture.md
+            echo
+            echo "---"
+            echo
+            cat 03_architecture/02_logical_arch.md
+            echo
+            echo "---"
+            echo
+            cat 03_architecture/03_Implementation.md
+          } > 03_architecture/README.md
+
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add 03_architecture/README.md
+
+          if git diff --cached --quiet; then
+            echo "README.md is already up to date."
+          else
+            git commit -m "docs: generate architecture README"
+            git push
+          fi
