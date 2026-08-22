@@ -1,4 +1,4 @@
-# Akshaya Patra — Intelligence Model -LEVEL 1
+# Akshaya Patra — Intelligence Model -Conceptual Arch
 ```text
 User Intelligence ──┐
 Food Intelligence ──┼──→ Recommendation
