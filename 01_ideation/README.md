@@ -1,3 +1,7 @@
+Moving to https://github.com/ushajaki-u/AkshyaPatra 
+
+
+
 # AI Product Discovery & User Journey — Akshaya Patra
 
 **Author:** Ushasree Jakilinki
